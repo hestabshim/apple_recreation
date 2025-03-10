@@ -1,0 +1,20 @@
+.nav-global {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #fafafc;
+  margin: 0;
+}
+.nav-global li{
+    list-style-type: none;
+
+}
+.nav-global ul {
+  display: inline-block;
+  margin: 0;
+  gap: 19.14px;
+}
