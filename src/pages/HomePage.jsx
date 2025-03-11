@@ -1,74 +1,41 @@
 import React from "react";
-import styles from "../styles/home.module.css";
 import BigCard from "../components/bigcard";
+import hero_macbook_air_announce__dqw53b1i7j6u_large_2x from "../assets/hero_macbook_air_announce__dqw53b1i7j6u_large_2x.jpg";
+import hero_ipad_air_preorder__ftn4a0m2i0uq_large_2x from "../assets/hero_ipad_air_preorder__ftn4a0m2i0uq_large_2x.jpg";
+import hero_iphone_family__fuz5j2v5xx6y_large_2x from "../assets/hero_iphone_family__fuz5j2v5xx6y_large_2x.jpg";
+import promo_airpods_pro_2_avail__vkitqi3okwie_medium_2x from "../assets/promo_airpods_pro_2_avail__vkitqi3okwie_medium_2x.jpg";    
+import promo_apple_card__5cm7draujpey_medium_2x from "../assets/promo_apple_card__5cm7draujpey_medium_2x.jpg";
+import GridItem from "../components/GridItem";
+import GridContainer from "../components/GridContainer";
 const HomePage = () => {
   return (
     <>
-      <BigCard />
-      <BigCard />
-
-        
-        <div className={styles.grid}>
-          
-          <div className={`${styles.gridItem} ${styles.macbookPro}`}>
-            <h4 className={styles.gridTitle}>MacBook Pro</h4>
-            <p className={styles.gridSubtitle}>Mind-blowing. Head-turning.</p>
-            <div className={styles.cta}>
-              <a href="#" className={styles.link}>Learn more &gt;</a>
-              <a href="#" className={styles.link}>Buy &gt;</a>
-            </div>
-          </div>
-
-         
-          <div className={`${styles.gridItem} ${styles.watch}`}>
-            <h4 className={styles.gridTitle}>WATCH</h4>
-            <p className={styles.gridSubtitle}>SERIES 9</p>
-            <p className={styles.gridSubtitle}>Smarter. Brighter. Mightier.</p>
-            <div className={styles.cta}>
-              <a href="#" className={styles.link}>Learn more &gt;</a>
-              <a href="#" className={styles.link}>Buy &gt;</a>
-            </div>
-          </div>
-
+      <BigCard
+        image={hero_macbook_air_announce__dqw53b1i7j6u_large_2x}
+        title="Macbook Air"
+        subtitle="Sky blue color. Sky high performance."
+        cta={{ link1: "Learn more", link2: "Pre-order." }}
+      />
+      <BigCard
+        image={hero_ipad_air_preorder__ftn4a0m2i0uq_large_2x}
+        title="iPad Air"
+        subtitle="Now supercharged by the M3 chip."
+        cta={{ link1: "Learn more", link2: "Pre-order." }}
+      />
+      <BigCard
+        image={hero_iphone_family__fuz5j2v5xx6y_large_2x}
+        title="iPhone"
+        subtitle="Meet the new iPhone 16 family."
+        cta={{ link1: "Learn more", link2: "Learn more." }}
+      />
+      {/* <GridContainer>
+      <GridItem image={promo_airpods_pro_2_avail__vkitqi3okwie_medium_2x} />
+      <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
+      <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
+      <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
+      </GridContainer> */}
       
-          <div className={`${styles.gridItem} ${styles.ipad}`}>
-            <h4 className={styles.gridTitle}>iPad</h4>
-            <p className={styles.gridSubtitle}>Lovable. Drawable. Magical.</p>
-            <div className={styles.cta}>
-              <a href="#" className={styles.link}>Learn more &gt;</a>
-              <a href="#" className={styles.link}>Buy &gt;</a>
-            </div>
-          </div>
-
         
-          <div className={`${styles.gridItem} ${styles.airpodsPro}`}>
-            <h4 className={styles.gridTitle}>AirPods Pro</h4>
-            <p className={styles.gridSubtitle}>Adaptive Audio. Now playing.</p>
-            <div className={styles.cta}>
-              <a href="#" className={styles.link}>Learn more &gt;</a>
-              <a href="#" className={styles.link}>Buy &gt;</a>
-            </div>
-          </div>
-
-          <div className={`${styles.gridItem} ${styles.card}`}>
-            <h4 className={styles.gridTitle}>Card</h4>
-            <p className={styles.gridSubtitle}>Get up to 3% Daily Cash back with every purchase.</p>
-            <div className={styles.cta}>
-              <a href="#" className={styles.link}>Learn more &gt;</a>
-              <a href="#" className={styles.link}>Apply now &gt;</a>
-            </div>
-          </div>
-
-          
-          <div className={`${styles.gridItem} ${styles.tradeIn}`}>
-            <h4 className={styles.gridTitle}>Trade In</h4>
-            <p className={styles.gridSubtitle}>Upgrade and save. It's that easy.</p>
-            <div className={styles.cta}>
-              <a href="#" className={styles.link}>See what your device is worth &gt;</a>
-            </div>
-          </div>
-        </div>
-      
     </>
   );
 };

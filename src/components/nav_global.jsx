@@ -57,7 +57,7 @@ const GlobalNav = () => {
             </NavLink>
           </ul>
           <ul className="iPhone">
-            <a href="/">
+            <NavLink to="/iphone">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -71,10 +71,10 @@ const GlobalNav = () => {
                   fill-opacity="0.8"
                 />
               </svg>
-            </a>
+            </NavLink>
           </ul>
           <ul className="Watch">
-            <a href="/">
+            <NavLink to="/watch">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -88,7 +88,7 @@ const GlobalNav = () => {
                   fill-opacity="0.8"
                 />
               </svg>
-            </a>
+            </NavLink>
           </ul>
           <ul className="Vision">
             <a href="/">

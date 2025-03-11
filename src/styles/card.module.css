@@ -168,3 +168,11 @@
     transform: scale(1);
   }
 }
+.gridContainer {
+    width: 100px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
