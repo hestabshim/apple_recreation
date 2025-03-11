@@ -1,8 +1,17 @@
 .section {
   display: flex;
-  width: 1920px;
-  padding: 80px 120px 0px 120px;
+  width: 100%;
+  padding: 0px;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

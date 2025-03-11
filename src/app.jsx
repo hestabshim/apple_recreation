@@ -2,13 +2,18 @@ import {useState} from "react";
 import { useEffect } from "react";
 import GlobalNav from "./components/nav_global";
 import Mac from "./pages/Mac";
-import section from "./components/section";
+import Home from "./pages/HomePage";
+import { HashRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-    <GlobalNav />
-    <Mac />
-    <section />
+      <HashRouter>
+        <GlobalNav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mac" element={<Mac />} />
+        </Routes>
+      </HashRouter>
     </>
   );
 };

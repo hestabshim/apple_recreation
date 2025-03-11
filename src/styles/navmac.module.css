@@ -1,32 +1,29 @@
 .nav-mac {
   display: flex;
   width: 100%;
-  height: 97px;
+  height: 132px;
   padding: 0px;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
+  padding: 16px;
+
 }
 
 .nav-mac ul {
   display: inline-block;
   align-items: center;
   gap: 40px;
-}
-
-.nav-mac li {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-mac a {
-  text-decoration: none;
+.nav-mac li a {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.nav-mac p {
+  text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
   font-family: "SF Pro Text";
   font-size: 12px;
@@ -36,4 +33,15 @@
   letter-spacing: -0.12px;
   margin-top: 8px;
   margin-bottom: 0;
+  align-items: center;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  white-space: nowrap;
+  display: inline-block;
+  justify-content: center;
+  align-items: end;
+  margin: auto;
+  height: 56px;
 }
