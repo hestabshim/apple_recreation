@@ -1,13 +1,13 @@
 .nav-global {
   display: flex;
-  width: 100%;
+  width: auto;
   height: 44px;
   padding: 0;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   background: #fafafc;
-  margin: 0;
+  margin: 0px -8px;
 }
 .nav-global li{
     list-style-type: none;

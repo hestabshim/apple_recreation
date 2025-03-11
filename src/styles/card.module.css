@@ -1,0 +1,170 @@
+.cardContainer {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+
+.cardScroller {
+  display: flex;
+  gap: 24px;
+  padding: 20px 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.cardScroller::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Add smooth scroll behavior */
+.cardScroller {
+  scroll-behavior: smooth;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 390px;
+  height: 844px;
+  background: white;
+  border-radius: 54px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  text-align: left;
+}
+
+.content h3 {
+  margin: 0 0 8px;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.content p {
+  margin: 0;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.modal {
+  background: white;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalEnter 0.3s ease;
+}
+
+.modalContent {
+  padding: 32px;
+}
+
+.modalContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.modalContent h2 {
+  margin: 0 0 16px;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.modalContent p {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  color: #1d1d1f;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
