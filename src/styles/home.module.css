@@ -1,0 +1,146 @@
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 44px 0 0 0;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 12px;
+  background-color: #fbfbfd;
+  overflow: hidden;
+}
+
+.section.dark {
+  background-color: #000;
+  color: #f5f5f7;
+}
+
+.title {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1d1d1f;
+}
+
+.dark .title {
+  color: #f5f5f7;
+}
+
+.subtitle {
+  font-size: 28px;
+  line-height: 1.10722;
+  font-weight: 400;
+  letter-spacing: .004em;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 6px 0 0;
+  color: #1d1d1f;
+}
+
+.dark .subtitle {
+  color: #f5f5f7;
+}
+
+.cta {
+  margin-top: 0.8em;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.link {
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
+  letter-spacing: .011em;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2997ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.gridItem {
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gridTitle {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+}
+
+.gridSubtitle {
+  font-size: 21px;
+  line-height: 1.2381;
+  font-weight: 400;
+  letter-spacing: .016em;
+  margin: 4px 0 0;
+}
+
+.iphone15pro {
+  background-image: url('../assets/hero_iphone15pro.jpg');
+}
+
+.iphone15 {
+  background-image: url('../assets/hero_iphone15.jpg');
+}
+
+.macbookPro {
+  background-image: url('../assets/promo_mbp.jpg');
+}
+
+.watch {
+  background-image: url('../assets/promo_watch9.jpg');
+}
+
+.ipad {
+  background-image: url('../assets/promo_ipad.jpg');
+}
+
+.airpodsPro {
+  background-image: url('../assets/promo_airpods.jpg');
+}
+
+.card {
+  background-image: url('../assets/promo_card.jpg');
+}
+
+.tradeIn {
+  background-image: url('../assets/promo_tradein.jpg');
+} 
