@@ -12,6 +12,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mac" element={<Mac />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </HashRouter>
     </>
