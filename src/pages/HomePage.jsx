@@ -28,12 +28,14 @@ const HomePage = () => {
         subtitle="Meet the new iPhone 16 family."
         cta={{ link1: "Learn more", link2: "Learn more." }}
       />
-      {/* <GridContainer>
+      <GridContainer>
       <GridItem image={promo_airpods_pro_2_avail__vkitqi3okwie_medium_2x} />
       <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
       <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
       <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
-      </GridContainer> */}
+      <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
+      <GridItem image={promo_apple_card__5cm7draujpey_medium_2x}/>
+      </GridContainer>
       
         
     </>
